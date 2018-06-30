@@ -19,5 +19,13 @@ class BankAccount
     self.status == "open"
   end
 
+  def self.total_amount_of_money
+    balance = 0
+    @@all.each do |account|
+     balance += account.balance
+    end
+    balance
+  end
+
 
 end

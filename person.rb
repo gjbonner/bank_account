@@ -1,8 +1,9 @@
 class Person
 
-  attr_reader :name
+  attr_reader :first_name, :last_name
   @@all = []
-  def initialize(name)
+
+  def initialize(first_name, last_name)
     @name = name
     @@all << self
   end
@@ -10,5 +11,11 @@ class Person
   def self.all
     @@all
   end
+
+  def full_name
+  	"#{first_name} #{last_name}"
+  end
+
+  
 
 end
