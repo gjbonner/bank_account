@@ -4,7 +4,8 @@ class Person
   @@all = []
 
   def initialize(first_name, last_name)
-    @name = name
+    @first_name = first_name
+    @last_name = last_name
     @@all << self
   end
 
@@ -16,6 +17,6 @@ class Person
   	"#{first_name} #{last_name}"
   end
 
-  
+
 
 end
